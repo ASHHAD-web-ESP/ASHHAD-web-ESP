@@ -33,4 +33,4 @@ def background_task_func():
 if __name__ == '__main__':
     app.run(debug=True)
     executor = Executor(app)
-    socketio.run(app)
+    socketio.run(app ,port=5000 )
