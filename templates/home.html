@@ -52,7 +52,7 @@ var myChart = new Chart(ctx, {
 
         $(document).ready(function() {
 
-            var socket = io().connect('http://127.0.0.1:5000');
+            var socket = io().connect();
             socket.emit('response_demo')
             socket.on('my_response', function(obj) {
             for (var i=0; i < obj.objects.length; i++) {
